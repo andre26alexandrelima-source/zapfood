@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="wiadth=device-width,initial-scale=1" />
+    <title>Delivery-Portifó lio</title>
+
+    <link
+        href="https://fonts.google.com/specimen/Nunito+Sans?preview.text=Whereas%20recognition%20of%20the%20inherent%20dignity"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="topo" role="banner">
+        <div class="topo-inner">
+            <div class="logo" arial="Delivery Food">
+                <span class="logo-emoji">🍽️</span>
+                <span class="logo-text">Ifode<span class="logo-accent">Pro</span></span>
+            </div>
+
+
+            <div class="search-wrap">
+                <label for="search" class="visually-hidden">Buscar</label>
+                <input id="search" type="search" placeholder="Buscar restaurante ou  pratos..."
+                    arial-label="Buscar restaurante ou pratos">
+                <button id="search" class="icon-btn" aria-label"Buscar">🔎</button>
+            </div>
+
+            <nav class="top-actions" aria-label="Ações">
+                <button class="icon-btn" title="favoritos" aria-label="favoritos">♡</button>
+                <button class="icon-btn" title="perfiel" aria-label="perfiel">👤</button>
+                <button id="cartToggle" class="cart-btn" aria-label="Abrie carrinho">
+                    🛒 <span id="cartCount" class="cart-count">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Comida gostosa entregue rapido</h1>
+            <p>Explore restaurante locais, descubra pratos incrives e peça online</p>
+            <div class="hero-actions">
+                <button class="btn-primary" data-scroll="#categorias">Explorar categorias</button>
+                <button class="btn-ghost"
+                    onclick="document.getElementById('featured').scrollIntoView({behavior:'smooth'})">ver
+                    destaque</button>
+            </div>
+        </div>
+
